@@ -6,8 +6,6 @@
   An intelligent multi-agent medical assistant powered by LangGraph, Streamlit, and modern LLMs.
 </p>
 
----
-
 ## 📌 Project Overview
 
 **Medical AI Agent** is a conversational AI assistant designed to help users with healthcare-related queries, database exploration, guideline retrieval, and general medical assistance. Built on **LangGraph**, it dynamically routes user queries to the most relevant expert agent using **structured decision logic** via a Supervisor node.
@@ -63,32 +61,32 @@ The medical AI agent system works in **three main stages**:
 
 The LangGraph-powered multi-agent system compiles the full graph of interactions, shown below:
 
-![LangGraph Agent Graph](images/multiagent_supervisor_graph.png)
+![LangGraph Agent Graph](images/multiagent_graph.png)
 
 ---
 
 ## ⚙️ Tech Stack
 
-🐍 **Python 3.12**
-🔗 **LangGraph / LangChain**
-📺 **Streamlit**
-🚀 **FastAPI**
-🌲 **Pinecone (RAG)**
-🛠️ **Whisper ASR** (Groq)
-🗣️ **PlayAI TTS**
-🤖 **OpenAI / Groq / HuggingFace models**
-🌐 **Tavily for Web Search**
-📦 **uv as the package manager**
+ 🐍 **Python 3.12**
+ 🔗 **LangGraph / LangChain**
+ 📺 **Streamlit**
+ 🚀 **FastAPI**
+ 🌲 **Pinecone (RAG)**
+ 🛠️ **Whisper ASR** (Groq)
+ 🗣️ **PlayAI TTS**
+ 🤖 **OpenAI / Groq / HuggingFace models**
+ 🌐 **Tavily for Web Search**
+ 📦 **uv as the package manager**
 
 ## 🗄️ Dataset and Knowledge Sources
 
-📄 **Medical PDFs**: Infection prevention & control guidelines (indexed in Pinecone)
-🛢️ **SQL Tables**:
-  - `Stroke prediction dataset`
-  - `Water pollution and disease correlations`
-  - `Lung cancer survey data`
-  - `Breast cancer clinical records`
-🌐 **Web Search:** Tavily-powered access to live health, science, weather, news, and more
+ 📄 **Medical PDFs**: Infection prevention & control guidelines (indexed in Pinecone)
+ 🛢️ **SQL Tables**:
+   - `Stroke prediction dataset`
+   - `Water pollution and disease correlations`
+   - `Lung cancer survey data`
+   - `Breast cancer clinical records`
+ 🌐 **Web Search:** Tavily-powered access to live health, science, weather, news, and more
 
 ---
 
@@ -127,15 +125,15 @@ streamlit run app.py
 
 Now open your browser and go to the URL provided by Streamlit (usually `http://localhost:8501`).
 
-## 🐳 Docker Setup (Optional)
+### 🐳 Docker Setup (Optional)
 
 You can run the full backend via Docker as an alternative to local setup.
 
-### 🔧 Build the Docker Image
+#### 🔧 Build the Docker Image
 ```bash
 docker build -t kousiknaskar/medical-ai-agent-api .
 ```
-### 🚀 **Run the Docker Container**
+#### 🚀 **Run the Docker Container**
 ```bash
 docker run --env-file .env -p 8000:8000 kousiknaskar/medical-ai-agent-api
 ```
