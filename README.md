@@ -67,25 +67,27 @@ The LangGraph-powered multi-agent system compiles the full graph of interactions
 
 ## ⚙️ Tech Stack
 
- 🐍 **Python 3.12**
- 🔗 **LangGraph / LangChain**
- 📺 **Streamlit**
- 🚀 **FastAPI**
- 🌲 **Pinecone (RAG)**
- 🛠️ **Whisper ASR** (Groq)
- 🗣️ **PlayAI TTS**
- 🤖 **OpenAI / Groq / HuggingFace models**
- 🌐 **Tavily for Web Search**
- 📦 **uv as the package manager**
+- 🐍 **Python 3.12**
+- 🔗 **LangGraph / LangChain**
+- 📺 **Streamlit**
+- 🚀 **FastAPI**
+- 🌲 **Pinecone (RAG)**
+- 🛠️ **Whisper ASR** (Groq)
+- 🗣️ **PlayAI TTS**
+- 🤖 **OpenAI / Groq / HuggingFaceembedding models**
+- 🌐 **Tavily for Web Search**
+- 📦 **uv as the package manager**
 
 ## 🗄️ Dataset and Knowledge Sources
 
  📄 **Medical PDFs**: Infection prevention & control guidelines (indexed in Pinecone)
+
  🛢️ **SQL Tables**:
    - `Stroke prediction dataset`
    - `Water pollution and disease correlations`
    - `Lung cancer survey data`
    - `Breast cancer clinical records`
+   
  🌐 **Web Search:** Tavily-powered access to live health, science, weather, news, and more
 
 ---
