@@ -1,0 +1,46 @@
+# LLM Models (Frontend selectable)
+llm_models:
+  - gpt-4o-mini
+  - gpt-4o
+  - llama-3.1-8b-instant
+  - mistral-saba-24b
+
+# Default primary model settings
+primary_agent:
+  llm: gpt-4o-mini
+  llm_temperature: 0.0
+
+# RAG Config (using Pinecone)
+guideipc_rag:
+  embedding_model: all-MiniLM-L12-v2   # HuggingFace model used for indexing and querying
+  pinecone_index: medical-pdf-agentic-rag-db
+  k: 5                                  # top-k retrieved chunks
+
+# SQL Config
+health_sqlagent_configs:
+  health_sqldb_dir: "sqldb/health_database.db"
+  table_descriptions_file: "database_table_descriptions.csv"
+
+# Tavily Web Search
+tavily_search_api:
+  tavily_search_max_results: 5
+
+# Whisper
+whisper_config:
+  model: whisper-large-v3-turbo
+  provider: groq
+
+# PlayAI
+playai_config:
+  model: playai-tts
+  voice: Basil-PlayAI
+  response_format: mp3
+
+# Graph
+graph_configs:
+  thread_id: 1
+
+
+# langsmith:
+#   tracing: "true"
+#   project_name: "Medical ai agent"  

@@ -1,0 +1,40 @@
+# Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+*.egg-info/
+*.egg
+
+# Bytecode files
+__pycache__/
+*.pyc
+
+# Git & editor files
+.git/
+*.log
+*.swp
+*.DS_Store
+
+# Exclude .env to protect secrets
+.env
+
+# Ignore research notebooks and experimental code
+research/
+*.ipynb
+
+# Ignore datasets (CSV)
+data_csv/
+
+# Ignore PDFs
+data_pdfs/
+*.pdf
+
+#Ignore Image files
+images/
+
+# Ignore Streamlit frontend
+app.py

@@ -1,0 +1,5 @@
+Table,Description
+Stroke_Prediction_Dataset,"Contains patient-level medical data to predict stroke risk based on features such as age, gender, hypertension, heart disease, BMI, glucose level, and smoking status. Useful for preventive healthcare analytics and risk stratification."
+water_pollution_disease,"Captures global trends (2000–2025) in water pollution and related disease outbreaks across countries and regions. Includes contaminant levels, access to clean water, sanitation metrics, and socio-economic indicators. Supports environmental and public health policy analysis."
+survey_lung_cancer,"Consists of individual survey responses from a lung cancer risk assessment tool. Attributes include behavioral and medical symptoms like smoking, anxiety, fatigue, and chronic illness. Designed for early warning systems and risk prediction in lung cancer."
+Breast_Cancer,"Comprehensive clinical dataset for breast cancer patients, including tumor characteristics (stage, size, differentiation), hormone receptor status, and survival outcomes. Ideal for prognosis modeling, treatment outcome analysis, and survival prediction."
